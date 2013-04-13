@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  goal: MyText
+  bl1: MyText
+  bl2: MyText
+  bl3: MyText
+  bl4: MyText
+  homework: MyText
+  resources: MyText
+
+two:
+  goal: MyText
+  bl1: MyText
+  bl2: MyText
+  bl3: MyText
+  bl4: MyText
+  homework: MyText
+  resources: MyText

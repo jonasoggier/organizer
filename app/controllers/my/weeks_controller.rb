@@ -1,6 +1,7 @@
 class My::WeeksController < ApplicationController
    
   def index
+  	@week = Week.all
   end
 
   def show

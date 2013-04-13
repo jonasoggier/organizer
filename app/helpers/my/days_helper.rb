@@ -1,0 +1,2 @@
+module My::DaysHelper
+end

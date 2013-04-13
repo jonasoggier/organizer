@@ -1,19 +1,32 @@
 Organizer::Application.routes.draw do
-  get "weeks/edit"
+  get "days/show"
 
-  get "weeks/update"
+  get "days/index"
 
-  get "weeks/index"
+  get "days/edit"
 
-  get "weeks/show"
+  get "days/update"
+
+  # get "weeks/edit"
+
+  # get "weeks/update"
+
+  # get "weeks/index"
+
+  # get "weeks/show"
 
   # get "welcome/index"
   root :to => 'welcome#index'
   devise_for :users
-  resources :weeks, only: [:show]
+  resources :weeks, only: [:show] do
+    resources :days
+  end
+
 
   namespace :my do
-    resources :weeks
+    resources :weeks do
+      resources :days
+    end
   end
 
   # The priority is based upon order of creation:

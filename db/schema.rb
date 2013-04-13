@@ -11,7 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130413140218) do
+ActiveRecord::Schema.define(:version => 20130413173116) do
+
+  create_table "days", :force => true do |t|
+    t.text     "goal"
+    t.text     "bl1"
+    t.text     "bl2"
+    t.text     "bl3"
+    t.text     "bl4"
+    t.text     "homework"
+    t.text     "resources"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "day_of_week"
+    t.integer  "week_id"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -33,8 +47,9 @@ ActiveRecord::Schema.define(:version => 20130413140218) do
 
   create_table "weeks", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "week_number"
   end
 
 end
