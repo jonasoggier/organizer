@@ -1,27 +1,2 @@
-<style>
-
-.days{
-	width:60%;
-	margin: auto;
-}
-
-.days ul{
-	text-align: center;
-}
-
-</style>
-<h1><%= @week.name %></h1>
-<br/>
-<div class="navbar days">
-  <div class="navbar-inner">
-    <ul class="nav">
-<!--       <li class="active"><a href="#">Home</a></li>
- -->  
- 			<li><a href="#">Monday</a></li>   <%= link_to "Friday", edit_my_week_day_path(@week, @week.id*5) %>
-      <li><a href="#">Tuesday</a></li>
-      <li><a href="#">Wednesday</a></li>
-      <li><a href="#">Thursday</a></li>
-      <li><a href="#">Friday</a></li>
-		</ul>
-  </div>
-</div>
+<h1>Week: <%= @week.week_number %></h1>
+<%= render "my/shared/nav" %>

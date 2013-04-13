@@ -1,2 +1,14 @@
-<h1><%= @day%></h1>
-<p>Find me in app/views/my/days/edit.html.erb</p>
+<%= render "my/shared/nav" %>
+<h1>Week: <%=@week.week_number%> 
+
+
+<br/>
+	<%= "Monday" if @day.day_of_week == 1%>
+	<%= "Tuesday" if @day.day_of_week == 2%>
+	<%= "Wednesday" if @day.day_of_week == 3%>
+	<%= "Thursday" if @day.day_of_week == 4%>
+	<%= "Friday" if @day.day_of_week == 5%>
+
+</h1>
+
+<%= render "my/days/form"%>

@@ -1,0 +1,33 @@
+<%= form_for [:my, @week, @day] do |f| %>
+
+	<div>
+		<%= f.text_field :goal, placeholder: 'Goal of the Day' %>
+	</div>
+
+	<div>
+		<%= f.text_field :bl1, placeholder: 'What we are doing in Block 1' %>
+	</div>
+
+	<div>
+		<%= f.text_field :bl2, placeholder: 'What we are doing in Block 2' %>
+	</div>
+
+	<div>
+		<%= f.text_field :bl3, placeholder: 'What we are doing in Block 3' %>
+	</div>
+
+	<div>
+		<%= f.text_field :bl4, placeholder: 'What we are doing in Block 4' %>
+	</div>
+
+	<div>
+		<%= f.text_field :homework, placeholder: 'Homework for the Day' %>
+	</div>
+
+	<div>
+		<%= f.text_field :resources, placeholder: 'Resources' %>
+	</div>
+
+	<%= f.submit 'Update Day', class: 'btn' %>
+
+<%end%>
