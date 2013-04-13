@@ -1,0 +1,41 @@
+<table class = "table table-striped table-bordered">
+
+  <tbody>
+    <tr>
+      <td>Goal of the Day</td>
+      <td><%= @week.days.find_by_day_of_week(day_number).goal %></td>
+    </tr>
+
+    <tr>
+      <td>Block 1</td>
+      <td><%= @week.days.find_by_day_of_week(day_number).bl1 %></td>
+    </tr>
+
+    <tr>
+      <td>Block 2</td>
+      <td><%= @week.days.find_by_day_of_week(day_number).bl2 %></td>
+    </tr>
+
+    <tr>
+      <td>Block 3</td>
+      <td><%= @week.days.find_by_day_of_week(day_number).bl3 %></td>
+    </tr>
+
+    <tr>
+      <td>Block 4</td>
+      <td><%= @week.days.find_by_day_of_week(day_number).bl4 %></td>
+    </tr>
+
+    <tr>
+      <td>Homework</td>
+      <td><%= @week.days.find_by_day_of_week(day_number).homework %></td>
+    </tr>
+
+     <tr>
+      <td>Resources</td>
+      <td><%= @week.days.find_by_day_of_week(day_number).resources %></td>
+    </tr>
+  </tbody>
+
+
+</table>

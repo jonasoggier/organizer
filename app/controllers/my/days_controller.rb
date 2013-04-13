@@ -1,6 +1,7 @@
 class My::DaysController < ApplicationController
   
   before_filter :require_week
+  before_filter :authenticate_user!
 
   def index
   end
