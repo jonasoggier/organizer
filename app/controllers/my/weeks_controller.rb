@@ -4,6 +4,7 @@ class My::WeeksController < ApplicationController
   end
 
   def show
+  	@week = Week.find(params[:id])
   end
 
   def edit
