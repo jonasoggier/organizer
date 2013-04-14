@@ -1,11 +1,16 @@
+<div class="nav-shell">
+	<%= render "shared/nav" %>
+</div>
+
 <div class = "teacher_bg">
 	<div class = "container">
 
-<% if flash[:notice] %>
-  <p class='.alert-success'><%= flash[:notice] %></p>
-<% end %>
+		<% if flash[:notice] %>
+		  <p class='.alert-success'><%= flash[:notice] %></p>
+		<% end %>
 
-	<%= render "my/shared/nav" %>
+		<%= render "my/shared/nav" %>
+
 		<h1>Week: <%=@week.week_number%> - 
 			<%= "Monday" if @day.day_of_week == 1%>
 			<%= "Tuesday" if @day.day_of_week == 2%>
@@ -13,6 +18,8 @@
 			<%= "Thursday" if @day.day_of_week == 4%>
 			<%= "Friday" if @day.day_of_week == 5%>
 		</h1>
+
 		<%= render "my/days/form"%>
+		
 	</div>
 </div>

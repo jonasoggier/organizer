@@ -1,27 +1,10 @@
 Organizer::Application.routes.draw do
-  get "days/show"
 
-  get "days/index"
-
-  get "days/edit"
-
-  get "days/update"
-
-  # get "weeks/edit"
-
-  # get "weeks/update"
-
-  # get "weeks/index"
-
-  # get "weeks/show"
-
-  # get "welcome/index"
   root :to => 'welcome#index'
-  devise_for :users
-  resources :weeks, only: [:show] do
-    resources :days
-  end
 
+  devise_for :users
+
+  resources :weeks, only: [:show] 
 
   namespace :my do
     resources :weeks do

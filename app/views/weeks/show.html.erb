@@ -1,7 +1,12 @@
-<div class = "week_bg_pic week-<%=@week.week_number%>">
-  <h1 class= "background-shade-table">Week: <%=@week.week_number%></h1>
+<div class="nav-shell">
+  <%= render "shared/nav" %>
+</div>
+
+<div class = "week_bg_pic week-<%= @week.week_number %>">
+  <h1 class= "background-shade-table">Week: <%= @week.week_number %></h1>
   <div class = "container">
     <div class = "week-table">
+      
       <ul class="nav nav-tabs" id="myTab">
         <li><a href="#monday" data-toggle="tab">Monday</a></li>
         <li><a href="#tuesday" data-toggle="tab">Tuesday</a></li>

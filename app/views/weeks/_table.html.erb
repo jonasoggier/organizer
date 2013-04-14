@@ -1,7 +1,7 @@
 <table class = "table table-striped table-bordered">
 
   <tbody>
-    <tr>
+    <tr class = "success">
       <td class="span2"><strong>Goal of the Day</strong></td>
       <td><%= simple_format(@week.days.find_by_day_of_week(day_number).goal)  %></td>
     </tr>

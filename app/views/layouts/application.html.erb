@@ -7,10 +7,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body class = "body">
-<div class="nav-shell">
-	<%= render "layouts/nav" %>
-</div>
 
+<!-- Navbar has to be rendered from weeks and days pages as devise doesn's recognize @week used to add active class  -->
 
 <% if flash[:notice] %>
   <div class=' notice .alert-success'><%= flash[:notice] %></div>
