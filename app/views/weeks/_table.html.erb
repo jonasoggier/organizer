@@ -3,7 +3,7 @@
   <tbody>
     <tr class = "success">
       <td class="span2"><strong>Goal of the Day</strong></td>
-      <td><%= simple_format(@week.days.find_by_day_of_week(day_number).goal)  %></td>
+      <td><strong><%= simple_format(@week.days.find_by_day_of_week(day_number).goal) %></strong></td>
     </tr>
 
     <tr>

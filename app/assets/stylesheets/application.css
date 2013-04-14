@@ -34,6 +34,14 @@
 	padding-right: 20px;
 	opacity: .7;
 	margin-left: -30px;
+	-webkit-animation: myfirst 2s;
+	-webkit-animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes myfirst 
+{
+0%   {left:-500px; top:92px;}
+100% {left:0px; top:92px;}
 }
 
 .nav-shell{
