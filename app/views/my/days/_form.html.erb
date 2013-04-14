@@ -1,33 +1,40 @@
 <%= form_for [:my, @week, @day] do |f| %>
 
 	<div>
-		<%= f.text_field :goal, placeholder: 'Goal of the Day' %>
+		<label>Goal of the Day</label>
+		<%= f.text_area :goal, placeholder: 'Goal of the Day', :class => "span6", :rows => "1" %>
 	</div>
 
 	<div>
-		<%= f.text_field :bl1, placeholder: 'What we are doing in Block 1' %>
+		<label>Block 1</label>
+		<%= f.text_area :bl1, placeholder: 'What we are doing in Block 1', :class => "span6", :rows => "4"  %>
 	</div>
 
 	<div>
-		<%= f.text_field :bl2, placeholder: 'What we are doing in Block 2' %>
+		<label>Block 2</label>
+		<%= f.text_area :bl2, placeholder: 'What we are doing in Block 2', :class => "span6", :rows => "4"  %>
 	</div>
 
 	<div>
-		<%= f.text_field :bl3, placeholder: 'What we are doing in Block 3' %>
+		<label>Block 3</label>
+		<%= f.text_area :bl3, placeholder: 'What we are doing in Block 3', :class => "span6", :rows => "4"  %>
 	</div>
 
 	<div>
-		<%= f.text_field :bl4, placeholder: 'What we are doing in Block 4' %>
+		<label>Block 4</label>
+		<%= f.text_area :bl4, placeholder: 'What we are doing in Block 4', :class => "span6", :rows => "4"  %>
 	</div>
 
 	<div>
-		<%= f.text_field :homework, placeholder: 'Homework for the Day' %>
+		<label>Homework</label>
+		<%= f.text_area :homework, placeholder: 'Homework for the Day', :class => "span6", :rows => "4"  %>
 	</div>
 
 	<div>
-		<%= f.text_field :resources, placeholder: 'Resources' %>
+		<label>Resources</label>
+		<%= f.text_area :resources, placeholder: 'Resources', :class => "span6", :rows => "4"  %>
 	</div>
 
-	<%= f.submit 'Update Day', class: 'btn' %>
+	<%= f.submit 'Update Day', class: 'btn btn-success' %>
 
 <%end%>

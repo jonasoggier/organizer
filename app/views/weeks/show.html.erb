@@ -1,17 +1,28 @@
-<h1>Week: <%=@week.week_number%></h1>
+<div class = "week_bg_pic week-<%=@week.week_number%>">
+  <h1 class= "background-shade-table">Week: <%=@week.week_number%></h1>
+  <div class = "container">
+    <div class = "week-table">
+      <ul class="nav nav-tabs" id="myTab">
+        <li><a href="#monday" data-toggle="tab">Monday</a></li>
+        <li><a href="#tuesday" data-toggle="tab">Tuesday</a></li>
+        <li><a href="#wednesday" data-toggle="tab">Wednesday</a></li>
+        <li><a href="#thursday" data-toggle="tab">Thursday</a></li>
+        <li><a href="#friday" data-toggle="tab">Friday</a></li>
+      </ul>
 
-<ul class="nav nav-tabs">
-  <li><a href="#monday" data-toggle="tab">Monday</a></li>
-  <li><a href="#tuesday" data-toggle="tab">Tuesday</a></li>
-  <li><a href="#wednesday" data-toggle="tab">Wednesday</a></li>
-  <li><a href="#thursday" data-toggle="tab">Thursday</a></li>
-  <li><a href="#friday" data-toggle="tab">Friday</a></li>
-</ul>
-
-<div class="tab-content">
-  <div class="tab-pane active" id="monday"><%= render 'table', :day_number => 1 %></div> 
-  <div class="tab-pane" id="tuesday"><%= render 'table', :day_number => 2 %></div>
-  <div class="tab-pane" id="wednesday"><%= render 'table', :day_number => 3 %></div>
-  <div class="tab-pane" id="thursday"><%= render 'table', :day_number => 4 %></div>
-  <div class="tab-pane" id="friday"><%= render 'table', :day_number => 5 %></div>
+      <div class="tab-content" >
+        <div class="tab-pane fade in active" id="monday"><%= render 'table', :day_number => 1 %></div> 
+        <div class="tab-pane fade in" id="tuesday"><%= render 'table', :day_number => 2 %></div>
+        <div class="tab-pane fade in" id="wednesday"><%= render 'table', :day_number => 3 %></div>
+        <div class="tab-pane fade in" id="thursday"><%= render 'table', :day_number => 4 %></div>
+        <div class="tab-pane fade in" id="friday"><%= render 'table', :day_number => 5 %></div>
+      </div>
+    </div>
+  </div>
 </div>
+
+<script>
+  $(function () {
+    $('#myTab a:first').fadeIn().tab('show');
+  })
+</script>

@@ -1,26 +1,10 @@
-<style>
 
-.days{
-	width:60%;
-	margin: auto;
-}
-
-.days ul{
-	text-align: center;
-}
-
-</style>
-
-<div class="navbar days">
-  <div class="navbar-inner">
-    <ul class="nav">
-<!--       <li class="active"><a href="#">Home</a></li>
- -->  
+    <ul class="nav nav-list span2 nav_teacher"> 
  			<li><%= link_to "Monday", edit_my_week_day_path(@week, 1) %></li>
       <li><%= link_to "Tuesday", edit_my_week_day_path(@week, 2) %></li>
       <li><%= link_to "Wednesday", edit_my_week_day_path(@week, 3) %></li>
       <li><%= link_to "Thursday", edit_my_week_day_path(@week, 4) %></li>
       <li><%= link_to "Friday", edit_my_week_day_path(@week, 5) %></li>
 		</ul>
-  </div>
-</div>
+
+

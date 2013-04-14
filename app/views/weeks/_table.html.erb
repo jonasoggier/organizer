@@ -2,38 +2,38 @@
 
   <tbody>
     <tr>
-      <td>Goal of the Day</td>
-      <td><%= @week.days.find_by_day_of_week(day_number).goal %></td>
+      <td class="span2"><strong>Goal of the Day</strong></td>
+      <td><%= simple_format(@week.days.find_by_day_of_week(day_number).goal)  %></td>
     </tr>
 
     <tr>
-      <td>Block 1</td>
-      <td><%= @week.days.find_by_day_of_week(day_number).bl1 %></td>
+      <td class="span2"><strong>Block 1</strong></td>
+      <td><%= simple_format(@week.days.find_by_day_of_week(day_number).bl1) %></td>
     </tr>
 
     <tr>
-      <td>Block 2</td>
-      <td><%= @week.days.find_by_day_of_week(day_number).bl2 %></td>
+      <td class="span2"><strong>Block 2</strong></td>
+      <td><%= simple_format(@week.days.find_by_day_of_week(day_number).bl2) %></td>
     </tr>
 
     <tr>
-      <td>Block 3</td>
-      <td><%= @week.days.find_by_day_of_week(day_number).bl3 %></td>
+      <td class="span2"><strong>Block 3</strong></td>
+      <td><%= simple_format(@week.days.find_by_day_of_week(day_number).bl3) %></td>
     </tr>
 
     <tr>
-      <td>Block 4</td>
-      <td><%= @week.days.find_by_day_of_week(day_number).bl4 %></td>
+      <td class="span2"><strong>Block 4</strong></td>
+      <td><%= simple_format(@week.days.find_by_day_of_week(day_number).bl4) %></td>
     </tr>
 
     <tr>
-      <td>Homework</td>
-      <td><%= @week.days.find_by_day_of_week(day_number).homework %></td>
+      <td class="span2"><strong>Homework</strong></td>
+      <td><%= simple_format(@week.days.find_by_day_of_week(day_number).homework) %></td>
     </tr>
 
      <tr>
-      <td>Resources</td>
-      <td><%= @week.days.find_by_day_of_week(day_number).resources %></td>
+      <td class="span2"><strong>Resources</strong></td>
+      <td><%= simple_format(@week.days.find_by_day_of_week(day_number).resources) %></td>
     </tr>
   </tbody>
 

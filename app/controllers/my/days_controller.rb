@@ -15,9 +15,9 @@ class My::DaysController < ApplicationController
     @day = Day.find(params[:id]) 
 
     if @day.update_attributes params[:day]
-      redirect_to [:root], notice: "Project updated!"
+      render :edit, notice: "Project updated!"
     else
-      render :edit
+      render :edit, notice: "Something went wrong!"
     end
   end
 

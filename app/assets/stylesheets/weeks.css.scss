@@ -1,3 +1,72 @@
 // Place all the styles related to the weeks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.background-shade-table{
+	margin-top: 20px;
+	background-color:black;
+	line-height: 60px;
+	width: 45%;
+	position:absolute;
+	color:white;
+	text-align: right;
+	padding-right: 20px;
+	opacity: .7;
+	margin-left: -30px;
+}
+
+.week-table{
+	margin-top: 13%;
+	background-color: white;
+	opacity: .95;
+	border-radius: 4px;
+	padding: 10px;
+	box-shadow: 0 0 5px 5px #888;
+}
+
+.week_bg_pic{
+	height:100%;
+	min-height:800px;
+	width: 100%;
+	margin-top: -20px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+.week-1{
+	background-image: url(week_1.png);
+}
+
+.week-2{
+	background-image: url(week_2.png);
+}
+
+.week-3{
+	background-image: url(week_3.png);
+}
+
+.week-4{
+	background-image: url(week_4.png);
+}
+
+.week-5{
+	background-image: url(week_5.png);
+}
+
+.week-6{
+	background-image: url(week_6.png);
+}
+
+.week-7{
+	background-image: url(week_7.png);
+}
+
+.week-8{
+	background-image: url(week_8.png);
+}
+
+.week-9{
+	background-image: url(week_9.png);
+}
+
+

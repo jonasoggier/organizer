@@ -6,13 +6,17 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
-<div class = "container">
-
+<body class = "body">
+<div class="nav-shell">
 	<%= render "layouts/nav" %>
-<!-- 	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p> -->
-	<%= yield %>
 </div>
+
+
+<% if flash[:notice] %>
+  <div class=' notice .alert-success'><%= flash[:notice] %></div>
+<% end %>
+
+	<%= yield %>
+
 </body>
 </html>
