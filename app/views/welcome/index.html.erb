@@ -3,6 +3,9 @@
 </div>
 
 <div class = "background-image">
+	<% if flash[:notice] %>
+  	<p class='alert alert-success'><%= flash[:notice] %></p>
+	<% end %>
 	<h1 class = "background-shade">Welcome to The Next Week</h1>
 </div>
 

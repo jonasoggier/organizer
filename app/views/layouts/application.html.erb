@@ -10,11 +10,7 @@
 
 <!-- Navbar has to be rendered from weeks and days pages as devise doesn's recognize @week used to add active class  -->
 
-<% if flash[:notice] %>
-  <div class=' notice .alert-success'><%= flash[:notice] %></div>
-<% end %>
-
-	<%= yield %>
+<%= yield %>
 
 </body>
 </html>

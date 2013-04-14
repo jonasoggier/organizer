@@ -11,9 +11,9 @@ class My::DaysController < ApplicationController
     @day = Day.find(params[:id]) 
 
     if @day.update_attributes params[:day]
-      render :edit, notice: "Project updated!"
+      redirect_to root_path, notice: "The program for #{"Monday" if @day.day_of_week == 1}#{"Tuesday" if @day.day_of_week == 2}#{"Wednesday" if @day.day_of_week == 3}#{"Thursday" if @day.day_of_week == 4}#{"Friday" if @day.day_of_week == 5} of week #{@week.week_number} was successfully updated!"
     else
-      render :edit, notice: "Something went wrong!"
+      render :edit, notice: "Uups...something went wrong!"
     end
   end
 
