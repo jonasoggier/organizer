@@ -5,21 +5,17 @@
 <div class = "teacher_bg">
 	<div class = "container">
 
-		<% if flash[:notice] %>
-		  <p class='alert alert-success'><%= flash[:notice] %></p>
-		<% end %>
+	<%= render "my/shared/nav" %>
 
-		<%= render "my/shared/nav" %>
+	<h1>Week: <%=@week.week_number%> - 
+		<%= "Monday" if @day.day_of_week == 1%>
+		<%= "Tuesday" if @day.day_of_week == 2%>
+		<%= "Wednesday" if @day.day_of_week == 3%>
+		<%= "Thursday" if @day.day_of_week == 4%>
+		<%= "Friday" if @day.day_of_week == 5%>
+	</h1>
 
-		<h1>Week: <%=@week.week_number%> - 
-			<%= "Monday" if @day.day_of_week == 1%>
-			<%= "Tuesday" if @day.day_of_week == 2%>
-			<%= "Wednesday" if @day.day_of_week == 3%>
-			<%= "Thursday" if @day.day_of_week == 4%>
-			<%= "Friday" if @day.day_of_week == 5%>
-		</h1>
-
-		<%= render "my/days/form"%>
+	<%= render "my/days/form"%>
 		
 	</div>
 </div>
